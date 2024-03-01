@@ -8,12 +8,12 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: "@packages/app1",
-        replacement: path.resolve(__dirname, "../../packages/app1"),
+        find: "@packages/newOne",
+        replacement: path.resolve(__dirname, "../../packages/newOne"),
       },
       {
-        find: "@packages/app2",
-        replacement: path.resolve(__dirname, "../../packages/app2"),
+        find: "@packages/legacy",
+        replacement: path.resolve(__dirname, "../../packages/legacy"),
       },
     ],
   },

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState } from "react";
-import { App1 } from '@packages/app1';
-import { App2 } from '@packages/app2';
+import { App1 } from '@packages/newOne';
+import { App2 } from '@packages/legacy';
 import './App.css';
 import {useToastStore} from "./stores/common/toast.store";
 

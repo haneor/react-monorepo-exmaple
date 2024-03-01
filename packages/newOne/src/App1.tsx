@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useToastStore} from "main/src/stores/common/toast.store";
+import {useToastStore} from "root/src/stores/common/toast.store";
 
 interface App1Props {
   onChange: (e: string) => void;

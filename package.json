@@ -2,12 +2,14 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "./packages/main",
-      "./packages/app1",
-      "./packages/app2"
+      "./packages/root",
+      "./packages/newOne",
+      "./packages/legacy"
     ]
   },
   "scripts": {
-    "main": "yarn workspace main dev"
+    "dev": "yarn workspace root dev",
+    "build": "yarn workspace root build",
+    "preview": "yarn workspace root preview"
   }
 }

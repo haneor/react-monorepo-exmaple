@@ -13,13 +13,14 @@ import {DialogType, useToastStore} from "../../stores/common/toast.store";
 
 const DialogWrapper = styled(Dialog)`
 	.MuiPaper-root {
+    background-color: wheat;
 		width: 320px;
 		border-radius: 16px;
 		box-shadow: 0px 5px 20px rgb(0, 0, 0, 0.25);
 	}
 `;
 
-const ToastContainer: FC = () => {
+const ToastContainer: () => (JSX.Element | null) = () => {
   const { open, onClose, title, subTitle, callback, dialogType } =
     useToastStore();
 
