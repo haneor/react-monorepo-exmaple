@@ -15,6 +15,10 @@ export default defineConfig({
         find: "@packages/legacy",
         replacement: path.resolve(__dirname, "../../packages/legacy"),
       },
+      {
+        find: "@packages/root",
+        replacement: path.resolve(__dirname, "../../packages/root"),
+      },
     ],
   },
 });
