@@ -1,1 +1,1 @@
-export { App2 } from './App2';
+export { LegacyApp } from './LegacyApp';

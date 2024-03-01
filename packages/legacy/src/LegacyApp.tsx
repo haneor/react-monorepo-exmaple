@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-export function App2({text}) {
+export function LegacyApp({text}) {
   return (
     <div>
       <h1>App 2</h1>

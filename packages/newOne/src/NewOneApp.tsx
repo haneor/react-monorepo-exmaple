@@ -1,17 +1,17 @@
 import * as React from 'react';
 import {useToastStore} from "root/src/stores/common/toast.store";
 
-interface App1Props {
+interface NewOneAppProps {
   onChange: (e: string) => void;
 }
 
-export function App1({
+export function NewOneApp({
   onChange,
-}: App1Props) {
+}: NewOneAppProps) {
   const { confirm } = useToastStore();
 
   const onClickButton = () => {
-    return confirm('App1 에서 값을 초기화 합니다.', () => onChange(''));
+    return confirm('NewOneApp 에서 값을 초기화 합니다.', () => onChange(''));
   }
 
   return (
