@@ -8,10 +8,10 @@ const GlobalTheme = createTheme({
 	},
 	palette: {
 		primary: {
-			main: '#b8860b',
+			main: '#556b2f',
 		},
 		text: {
-		  primary: '#b8860b',
+		  primary: '#556b2f',
 		},
 	},
 	components: {
