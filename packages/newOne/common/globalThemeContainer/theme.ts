@@ -1,6 +1,4 @@
 import { createTheme } from '@mui/material/styles';
-import styled from '@emotion/styled';
-import { Box } from '@mui/material';
 
 const GlobalTheme = createTheme({
 	typography: {

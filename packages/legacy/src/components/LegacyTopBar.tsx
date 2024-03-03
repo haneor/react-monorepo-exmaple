@@ -26,9 +26,9 @@ const LegacyTopBar: FC = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Legacy Top Bar
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Button</Button>
         </Toolbar>
       </AppBar>
     </div>

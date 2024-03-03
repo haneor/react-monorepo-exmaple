@@ -3,8 +3,9 @@ import * as React from 'react';
 import {NewOneApp} from "@packages/newOne";
 import {LegacyApp} from "@packages/legacy";
 import {useToastStore} from "@packages/root/src/stores/common/toast.store";
-import {styled, Typography} from "@mui/material";
+import {Box, Button, styled, Typography} from "@mui/material";
 import LegacyTopBar from "@packages/legacy/src/components/LegacyTopBar";
+import NewTopBar from "@packages/newOne/components/NewTopBar";
 
 const Home: FC = () => {
   const [data, setData] = useState<string>('');
@@ -14,11 +15,19 @@ const Home: FC = () => {
   return (
     <RootContainer>
       <LegacyTopBar />
-      <Typography variant="h4" color="primary">Home Application</Typography>
-      <NewOneApp onChange={setData} />
-      <LegacyApp text={data} />
+      <Box padding="2rem">
+        <Typography variant="h4" color="primary">Root Application</Typography>
+        <Button onClick={onClickButton}>Root 초기화</Button>
 
-      <button onClick={onClickButton} >눌러주세요.</button>
+        <Box display="flex" flexDirection="column">
+          <NewOneApp onChange={setData} />
+        </Box>
+
+        <Box display="flex" flexDirection="column">
+          <LegacyApp text={data} />
+        </Box>
+      </Box>
+      <NewTopBar />
     </RootContainer>
   );
 };

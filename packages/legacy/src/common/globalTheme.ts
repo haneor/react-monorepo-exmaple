@@ -2,11 +2,14 @@ import { createMuiTheme } from '@material-ui/core';
 const GlobalTheme = createMuiTheme({
   palette: {
     primary: {
-      main: '#1e1e1e',
+      main: '#e20909',
       contrastText: '#FFF',
     },
     error: {
       main: '#e20909',
+    },
+    text: {
+      primary: '#e20909'
     },
   },
   typography: {
@@ -60,6 +63,11 @@ const GlobalTheme = createMuiTheme({
     MuiPaper: {
       root: {},
     },
+    MuiAppBar: {
+      root: {
+        backgroundColor: '#e20909'
+      }
+    }
   },
 });
 export default GlobalTheme;
