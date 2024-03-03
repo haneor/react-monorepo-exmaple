@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import * as React from 'react';
-import {AppBar, Button, IconButton, makeStyles, Toolbar, Typography} from "@material-ui/core";
+import {AppBar, Button, IconButton, Link, makeStyles, Toolbar, Typography} from "@material-ui/core";
 import MenuIcon from '@material-ui/icons/Menu';
 
 const useStyles = makeStyles((theme) => ({
@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const LegacyTopBar: FC = () => {
+  // @ts-ignore
   const classes = useStyles();
 
   return (
@@ -28,7 +29,7 @@ const LegacyTopBar: FC = () => {
           <Typography variant="h6" className={classes.title}>
             Legacy Top Bar
           </Typography>
-          <Button color="inherit">Button</Button>
+          <Link color="inherit" href="/login">로그인 이동</Link>
         </Toolbar>
       </AppBar>
     </div>

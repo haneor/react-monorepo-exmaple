@@ -18,12 +18,12 @@ export function NewOneApp({
 
   return (
     <ThemeProvider theme={GlobalTheme}>
-      <Box display="flex" flexDirection="column">
+      <Box display="flex" flexDirection="column" gap="0.5rem">
         <Typography variant="h5" color="primary">New one app</Typography>
         <TextField
           onChange={e => onChange(e.target.value)}
         />
-        <Button variant="outlined" onClick={onClickButton} >눌러주세요.</Button>
+        <Button variant="contained" onClick={onClickButton} >New One 초기화</Button>
       </Box>
     </ThemeProvider>
   );

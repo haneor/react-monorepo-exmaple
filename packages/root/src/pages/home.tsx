@@ -15,9 +15,9 @@ const Home: FC = () => {
   return (
     <RootContainer>
       <LegacyTopBar />
-      <Box padding="2rem">
+      <Box padding="2rem" display="flex" flexDirection="column" gap="1rem">
         <Typography variant="h4" color="primary">Root Application</Typography>
-        <Button onClick={onClickButton}>Root 초기화</Button>
+        <Button variant="contained" onClick={onClickButton}>Root 초기화</Button>
 
         <Box display="flex" flexDirection="column">
           <NewOneApp onChange={setData} />
